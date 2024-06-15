@@ -1,0 +1,186 @@
+/* title */
+
+#title {
+  display: flex;
+  flex-direction: row;
+  gap: 6.4vw;
+  margin: 3.5vw 6.7vw 2vw;
+}
+
+h1 {
+  font-size: 5.8em;
+  font-weight: 700;
+}
+
+#title p {
+  margin-top: 4vw;
+  line-height: 2.5vw;
+}
+
+/* cards */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container {
+  padding: 0 6.5vw;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  width: 88vw;
+  margin-bottom: 2.5vw;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card,
+.card img {
+  width: 28vw;
+  height: 43.6vw;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 1.5vw;
+  position: relative;
+}
+
+.card:last-child {
+  margin-right: 1vw;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28vw;
+  height: 43.5vw;
+  justify-content: space-around;
+  gap: 3vw;
+}
+
+#mushroom img {
+  width: 18vw;
+  height: 24vw;
+  margin-top: -2vw;
+  margin-bottom: -2vw;
+}
+
+#insect img {
+  width: 16vw;
+  height: 20vw;
+}
+
+#pot img {
+  width: 19vw;
+  height: 20vw;
+}
+
+#flower img {
+  width: 22vw;
+  height: 21vw;
+}
+
+#frog img {
+  width: 24vw;
+  height: 20vw;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 0.7em;
+  line-height: 2vw;
+  text-align: center;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 6.5vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  background-color: #6b854f;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 1.7vw;
+  margin-right: 2.5vw;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+/* анимация */
+
+#insect {
+  animation: shake 0.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0.1vw, 0.1vw) rotate(0deg);
+  }
+  10% {
+    transform: translate(-0.1vw, -0.2vw) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-0.3vw, 0vw) rotate(1deg);
+  }
+  30% {
+    transform: translate(0.3vw, 0.2vw) rotate(0deg);
+  }
+  40% {
+    transform: translate(0.1vw, -0.1vw) rotate(1deg);
+  }
+  50% {
+    transform: translate(-0.1vw, 0.2vw) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-0.3vw, 0.1vw) rotate(0deg);
+  }
+  70% {
+    transform: translate(0.3vw, 0.1vw) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-0.1vw, -0.1vw) rotate(1deg);
+  }
+  90% {
+    transform: translate(0.1vw, 0.2vw) rotate(0deg);
+  }
+  100% {
+    transform: translate(0.1vw, -0.2vw) rotate(-1deg);
+  }
+}
+
+/* адаптив для планшета  */
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+} */

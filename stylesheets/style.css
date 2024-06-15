@@ -1,0 +1,38 @@
+@import url('reset.css');
+
+@font-face {
+  font-family: 'Kazimir';
+  src: url('../fonts/Kazimir-Bold.woff') format('woff'),
+    url('../fonts/Kazimir-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Kazimir';
+  src: url('../fonts/Kazimir-Regular.woff') format('woff'),
+    url('../fonts/Kazimir-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+a {
+  font-family: 'Kazimir';
+  font-weight: 400;
+  font-size: 1.9vw;
+  color: #1d1d1d;
+  background-color: #6b854f;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection {
+  background: none;
+  color: #6b854f;
+}
