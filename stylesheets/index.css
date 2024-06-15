@@ -39,18 +39,21 @@ h1 {
 }
 
 .card,
-.card img {
+.card_frog,
+.card img,
+.card_frog img {
   width: 28vw;
   height: 43.6vw;
 }
 
-.card {
+.card,
+.card_frog {
   flex: 0 0 auto;
   margin-right: 1.5vw;
   position: relative;
 }
 
-.card:last-child {
+.card_frog {
   margin-right: 1vw;
 }
 
@@ -87,16 +90,19 @@ h1 {
 }
 
 #flower img {
-  width: 22vw;
-  height: 21vw;
+  width: 23vw;
+  height: 22vw;
+  margin-top: -2vw;
+  margin-bottom: -0.5vw;
 }
 
 #frog img {
   width: 24vw;
   height: 20vw;
+  margin-top: -0.4vw;
 }
 
-h5 {
+h4 {
   font-weight: 700;
 }
 

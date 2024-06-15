@@ -17,7 +17,8 @@
 }
 
 body,
-a {
+a,
+button {
   font-family: 'Kazimir';
   font-weight: 400;
   font-size: 1.9vw;
@@ -25,14 +26,123 @@ a {
   background-color: #6b854f;
 }
 
-a {
+a,
+button {
   cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  width: 30vw;
+  height: 4.5vw;
+  font-weight: 700;
+  color: #6b854f;
+  background-color: #1d1d1d;
+  padding: 0;
+  border: none;
 }
 
 h1::selection,
 h2::selection,
 h3::selection,
-p::selection {
+h4::selection,
+p::selection,
+a::selection {
   background: none;
   color: #6b854f;
+}
+
+img::selection {
+  display: block;
+}
+
+button::selection {
+  background: none;
+  color: #1d1d1d;
+}
+
+/* хэдэр */
+
+#header {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu,
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  padding: 2.7vw 4.3vw 0.3vw;
+}
+
+#menu a {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+#links a {
+  font-weight: 400;
+  font-size: 1.9vw;
+}
+
+#links {
+  gap: 3vw;
+}
+
+#line {
+  padding-left: 4.3vw;
+}
+
+#line img {
+  width: 92vw;
+  height: 0.5vw;
+}
+
+/* первый блок для магазина и коливинга */
+
+.first_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4vw 4vw 4.8vw;
+  gap: 4vw;
+}
+
+h2 {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 4.5vw;
+  margin-top: 0.5vw;
+}
+
+.block_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.block_description img {
+  align-self: end;
+  margin-right: -0.6vw;
+  width: 8.5vw;
+  height: 9vw;
+}
+
+.block_description p {
+  margin-top: 2.6vw;
+  line-height: 2.3vw;
+}
+
+.block_description button {
+  margin-top: 3vw;
+}
+
+.block_image,
+.block_image img {
+  width: 53vw;
+  height: 35.5vw;
 }

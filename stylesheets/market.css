@@ -1,0 +1,68 @@
+/* карточки товаров */
+
+#shop {
+  padding: 0vw 4vw;
+  display: flex;
+  flex-direction: column;
+  width: 92vw;
+  gap: 2.8vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 47vw;
+}
+
+.item img {
+  width: 30vw;
+  height: 38.5vw;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.1vw;
+  position: relative;
+  width: 30vw;
+  height: 47vw;
+  gap: 1.1vw;
+}
+
+.bottle,
+.item_image,
+.palo_santo,
+.voodoo,
+.record,
+.book,
+.pestle,
+.bag {
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+.bottle img {
+  width: 74%;
+}
+
+.palo_santo img {
+  width: 90%;
+  margin-left: 1vw;
+}
+
+.voodoo img,
+.bag img {
+  width: 80%;
+}
+
+.record img {
+  width: 82%;
+}
+
+.book img,
+.pestle img {
+  width: 70%;
+}
