@@ -31,38 +31,33 @@
   gap: 1.1vw;
 }
 
-.bottle,
-.item_image,
-.palo_santo,
-.voodoo,
-.record,
-.book,
-.pestle,
-.bag {
+.card_image {
   position: absolute;
   top: 0;
   text-align: center;
 }
 
-.bottle img {
+#youth_bottle,
+#love_bottle,
+#intelligence_bottle {
   width: 74%;
 }
 
-.palo_santo img {
+#palo_santo {
   width: 90%;
   margin-left: 1vw;
 }
 
-.voodoo img,
-.bag img {
+#voodoo,
+#bag {
   width: 80%;
 }
 
-.record img {
+#record {
   width: 82%;
 }
 
-.book img,
-.pestle img {
+#book,
+#pestle {
   width: 70%;
 }

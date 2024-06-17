@@ -127,6 +127,12 @@ h4 {
   background-color: #6b854f;
 }
 
+button:hover {
+  color: none;
+  background-color: none;
+  border: none;
+}
+
 .pre-btn img,
 .nxt-btn img {
   width: 1.7vw;

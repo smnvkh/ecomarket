@@ -18,7 +18,8 @@
 
 body,
 a,
-button {
+button,
+input {
   font-family: 'Kazimir';
   font-weight: 400;
   font-size: 1.9vw;
@@ -40,6 +41,12 @@ button {
   background-color: #1d1d1d;
   padding: 0;
   border: none;
+}
+
+button:hover {
+  color: #1d1d1d;
+  background-color: #6b854f;
+  border: solid 0.2vw #1d1d1d;
 }
 
 h1::selection,
@@ -94,11 +101,11 @@ button::selection {
   gap: 3vw;
 }
 
-#line {
+#upper_line {
   padding-left: 4.3vw;
 }
 
-#line img {
+#upper_line img {
   width: 92vw;
   height: 0.5vw;
 }
@@ -125,11 +132,37 @@ h2 {
   flex-direction: column;
 }
 
-.block_description img {
+.checkbox {
   align-self: end;
   margin-right: -0.6vw;
+}
+
+.checkbox input {
+  position: absolute;
+  left: 33.8vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  top: 15.5vw;
+  opacity: 0;
+}
+
+.block_description img {
   width: 8.5vw;
   height: 9vw;
+  position: relative;
+  animation: star 2s infinite;
+}
+
+@keyframes star {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .block_description p {
@@ -138,11 +171,100 @@ h2 {
 }
 
 .block_description button {
-  margin-top: 3vw;
+  margin-top: 2.8vw;
 }
 
 .block_image,
 .block_image img {
   width: 53vw;
   height: 35.5vw;
+}
+
+/* футер */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5.2vw 4vw 2.7vw;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.section:first-child {
+  width: 11vw;
+}
+
+.section:nth-child(2) {
+  width: 12vw;
+}
+
+.section:nth-child(3) {
+  width: 25vw;
+}
+
+.section p {
+  margin-bottom: 0.5vw;
+  font-weight: 700;
+}
+
+.section:last-child p {
+  margin-left: 1vw;
+}
+
+#email {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1vw;
+  gap: 1vw;
+}
+
+#email input {
+  width: 24vw;
+  height: 3.8vw;
+  padding-left: 1vw;
+  border: solid 0.2vw #1d1d1d;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#email img {
+  width: 4.5vw;
+  height: 4.5vw;
+}
+
+#bottom_line {
+  margin-top: 4vw;
+}
+
+#bottom_line img {
+  width: 92vw;
+  height: 0.5vw;
+}
+
+#author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vw;
+  align-items: center;
+}
+
+#author a {
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-right: 5.5vw;
 }
