@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // анимация главного изображения
   let mainVoodoo = document.querySelector('.block_image')
   mainVoodoo.addEventListener('mouseover', newMainVoodoo)
+  mainVoodoo.addEventListener('touchstart', newMainVoodoo)
   mainVoodoo.addEventListener('mouseout', oldMainVoodoo)
 
   function newMainVoodoo() {
