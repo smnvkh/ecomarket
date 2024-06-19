@@ -1,0 +1,123 @@
+#projects {
+  padding: 4.2vw 4vw 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.frame {
+  margin-right: 1.5vw;
+  position: relative;
+}
+
+.first_content,
+.second_content {
+  position: absolute;
+  top: 0.9vw;
+  left: 0.9vw;
+  width: 43.4vw;
+  height: 41.6vw;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2.7vw 2vw;
+}
+
+h3 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 1.4vw;
+}
+
+.info p {
+  line-height: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+.frame img {
+  width: 45.2vw;
+  height: 43.5vw;
+}
+
+.first_content::before,
+.second_content::before {
+  content: '';
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* первый блок */
+
+.first_content::before {
+  background-image: url('../images/garden_mushroom.svg'),
+    url('../images/garden_plant.svg'), url('../images/garden_flower.svg'),
+    url('../images/garden_mushroom2.svg');
+  background-size: 25vw, 23vw, 18vw, 22vw;
+}
+
+.first_content:hover::before {
+  animation: left_floating 8s forwards ease-in-out;
+}
+
+@keyframes left_floating {
+  0% {
+    background-position: right 25vw bottom 18vw, left 5vw top 20vw,
+      left 20vw bottom 27vw, left 25vw top 18vw;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    background-position: left 42vw bottom 8vw, right 20vw bottom 40vw,
+      left 23vw top 43vw, right 40vw top 18vw;
+    opacity: 1;
+  }
+}
+
+.frame a {
+  width: 30vw;
+  position: absolute;
+  bottom: 10vw;
+  left: 3vw;
+}
+
+/* второй блок */
+
+.frame:nth-child(2) a {
+  bottom: 7.5vw;
+}
+
+.second_content::before {
+  background-image: url('../images/ad_ball.svg'), url('../images/ad_jug.svg'),
+    url('../images/ad_mushroom.svg'), url('../images/ad_insect.svg');
+  background-size: 23vw, 24vw, 25vw, 25vw;
+}
+
+.second_content:hover::before {
+  animation: right_floating 8s forwards ease-in-out;
+}
+
+@keyframes right_floating {
+  0% {
+    background-position: right 25vw top 20vw, left 20vw bottom 19vw,
+      right 21vw bottom 20vw, left 19vw top 21vw;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    background-position: left 42vw bottom 18vw, right 40vw top 10vw,
+      left 23vw top 38vw, right 20vw bottom 42vw;
+    opacity: 1;
+  }
+}
