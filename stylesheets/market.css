@@ -1,5 +1,9 @@
-/* карточки товаров */
+/* хэдэр */
+#menu li:first-child a {
+  font-weight: 700;
+}
 
+/* карточки товаров */
 #shop {
   padding: 0vw 4vw;
   display: flex;

@@ -1,0 +1,111 @@
+/* хэдэр */
+
+#menu a:nth-child(4) {
+  font-weight: 700;
+}
+
+/* экраны */
+
+#house_project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vw;
+  line-height: 2.4vw;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+  padding-bottom: 5.2vw;
+}
+
+.blocks:nth-child(3) {
+  padding-bottom: 0;
+}
+
+/* кликабельный блок со схемой здания и рендерами */
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.floor {
+  position: relative;
+}
+
+.floor img {
+  width: 20vw;
+}
+
+.radios {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.radio {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#left_bedroom {
+  left: 1vw;
+  top: 5vw;
+}
+
+#altar {
+  left: 7vw;
+  top: 7.5vw;
+}
+
+#right_bedroom {
+  left: 13vw;
+  top: 5vw;
+}
+
+#library {
+  left: 3vw;
+  top: 12vw;
+}
+
+#potionary {
+  left: 7vw;
+  top: 7vw;
+}
+
+#divination {
+  left: 7vw;
+  top: 0.7vw;
+}
+
+#garden {
+  left: 1vw;
+  top: 1vw;
+  width: 17vw;
+  height: 17vw;
+}
+
+#titles {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  gap: 14vw;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+#images img {
+  width: 30vw;
+}

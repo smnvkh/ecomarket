@@ -143,6 +143,7 @@ h2 {
   width: 2.5vw;
   height: 2.5vw;
   top: 15.5vw;
+  cursor: pointer;
   opacity: 0;
 }
 
@@ -171,13 +172,13 @@ h2 {
 }
 
 .block_description button {
-  margin-top: 2.8vw;
+  margin-top: 3vw;
 }
 
 .block_image,
 .block_image img {
   width: 53vw;
-  height: 35.5vw;
+  height: 36vw;
 }
 
 /* футер */
@@ -206,11 +207,11 @@ h2 {
 }
 
 .section:nth-child(2) {
-  width: 12vw;
+  width: 13vw;
 }
 
 .section:nth-child(3) {
-  width: 25vw;
+  width: 26vw;
 }
 
 .section p {

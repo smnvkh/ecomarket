@@ -1,3 +1,9 @@
+/* хэдэр */
+
+#menu a:nth-child(2) {
+  font-weight: 700;
+}
+
 #posters {
   padding-top: 4.2vw;
   position: relative;

@@ -1,3 +1,9 @@
+/* хэдэр */
+
+#menu a:last-child {
+  font-weight: 700;
+}
+
 #projects {
   padding: 4.2vw 4vw 0;
   display: flex;
@@ -30,6 +36,7 @@ h3 {
   font-size: 2.2em;
   font-weight: 700;
   margin-bottom: 1.4vw;
+  line-height: 4.5vw;
 }
 
 .info p {
@@ -86,14 +93,14 @@ h3 {
 .frame a {
   width: 30vw;
   position: absolute;
-  bottom: 10vw;
+  bottom: 9vw;
   left: 3vw;
 }
 
 /* второй блок */
 
 .frame:nth-child(2) a {
-  bottom: 7.5vw;
+  bottom: 6.5vw;
 }
 
 .second_content::before {

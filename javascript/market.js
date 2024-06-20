@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let checkbox = document.getElementById('checkbox')
 
   checkbox.addEventListener('change', function () {
-    if (document.getElementById('checkbox').checked) {
+    if (checkbox.checked) {
       newMainVoodoo(),
         newYouthBottle(),
         newLoveBottle(),
@@ -35,12 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
   mainVoodoo.addEventListener('mouseout', oldMainVoodoo)
 
   function newMainVoodoo() {
-    document.getElementById('main_voodoo').src =
-      'images/main_voodoo_colored.svg'
+    document.getElementById('main_image').src = 'images/main_voodoo_colored.svg'
   }
 
   function oldMainVoodoo() {
-    document.getElementById('main_voodoo').src = 'images/main_voodoo.png'
+    document.getElementById('main_image').src = 'images/main_voodoo.png'
   }
 
   // анимация первого ряда изображений
