@@ -22,7 +22,7 @@
   padding-bottom: 5.2vw;
 }
 
-.blocks:nth-child(3) {
+.blocks:nth-child(4) {
   padding-bottom: 0;
 }
 
@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: row;
   gap: 1vw;
+  margin-bottom: -3vw;
 }
 
 .floor {
@@ -41,6 +42,12 @@
 .floor img {
   width: 20vw;
 }
+
+/* #first_floor,
+#second_floor,
+#third_floor {
+  cursor: pointer;
+} */
 
 .radios {
   position: absolute;
@@ -95,9 +102,11 @@
 
 #titles {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   font-weight: 700;
-  gap: 14vw;
+  gap: 14.2vw;
+  width: 62vw;
 }
 
 #images {
@@ -108,4 +117,167 @@
 
 #images img {
   width: 30vw;
+}
+
+/* текстовый блок с цитатой */
+
+#quote {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 2.7vw;
+}
+
+/* книга */
+
+#image_stack {
+  position: relative;
+  margin: 0 auto;
+  width: 76vw;
+  height: 54.4vw;
+}
+
+#image_stack img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#image1.move {
+  animation: image1 1s forwards;
+}
+
+#image2.move {
+  animation: image2 1s forwards;
+}
+
+#image3.move {
+  animation: image3 1s forwards;
+}
+
+#image4.move {
+  animation: image4 1s forwards;
+}
+
+#image5.move {
+  animation: image5 1s forwards;
+}
+
+#image6.move {
+  animation: image6 1s forwards;
+}
+
+#image7.move {
+  animation: image7 1s forwards;
+}
+
+#image8.move {
+  animation: image8 1s forwards;
+}
+
+#image9.move {
+  animation: image9 1s forwards;
+}
+
+@keyframes image1 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(-60%, -120%, 0);
+  }
+}
+
+@keyframes image2 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(115%, 10%, 0);
+  }
+}
+
+@keyframes image3 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(-10%, 140%, 0);
+  }
+}
+
+@keyframes image4 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(60%, 120%, 0);
+  }
+}
+
+@keyframes image5 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(35%, -130%, 0);
+  }
+}
+
+@keyframes image6 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(90%, 120%, 0);
+  }
+}
+
+@keyframes image7 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(-115%, 20%, 0);
+  }
+}
+
+@keyframes image8 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(-10%, -130%, 0);
+  }
+}
+
+@keyframes image9 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translate3d(30%, 120%, 0);
+  }
+}
+
+#booking_pop_up {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#booking_pop_up_content {
+  background-color: #6b854f;
+  margin: 10vw auto;
+  padding: 3vw;
+  width: 63vw;
+  height: 83vw;
+  text-align: center;
 }

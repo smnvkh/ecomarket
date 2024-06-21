@@ -214,12 +214,12 @@ h2 {
   width: 26vw;
 }
 
-.section p {
+.section label {
   margin-bottom: 0.5vw;
   font-weight: 700;
 }
 
-.section:last-child p {
+.section:last-child label {
   margin-left: 1vw;
 }
 
