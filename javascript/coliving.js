@@ -14,6 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('main_image').src = 'images/coliving_main.svg'
   }
 
+  // поп-ап с заявкой на бронь
+
+  const popUp = document.getElementById('booking_pop_up')
+  const openButton = document.getElementById('open_button')
+  const closeButton = document.getElementsByClassName('close_button')[0]
+
+  openButton.onclick = function () {
+    popUp.style.display = 'block'
+  }
+
+  closeButton.onclick = function () {
+    popUp.style.display = 'none'
+  }
+
+  window.onclick = function (event) {
+    if (event.target == popUp) {
+      popUp.style.display = 'none'
+    }
+  }
+
   // hover animation / house plan
   let altarImage = document.querySelector('#images')
   altarImage.addEventListener('mouseover', newAltarImage)

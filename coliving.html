@@ -67,18 +67,98 @@
           в старинном доме, оборудованном<br />
           всеми необходимыми атрибутами
         </p>
-        <button>забронировать</button>
+        <button id="open_button">забронировать</button>
       </div>
 
       <div id="booking_pop_up" class="booking_pop_up">
         <div id="booking_pop_up_content">
           <h2>заявка на поездку</h2>
           <form action="" method="">
-            <label>мы знакомы?</label>
-            <input type="radio" class="visit" name="visit" value="" />
-            <p>нет, это моя первая поездка</p>
-            <input type="radio" class="visit" name="visit" value="" />
-            <p>да, я уже был(а) у вас!</p>
+            <div class="point">
+              <span>мы знакомы?</span>
+              <div id="visit">
+                <div class="radio_check">
+                  <input type="radio" name="visit" value="no" />
+                  <p>нет, это моя первая поездка</p>
+                </div>
+                <div class="radio_check">
+                  <input type="radio" name="visit" value="yes" />
+                  <p>да, я уже был(а) у вас!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="point">
+              <span>персональные данные</span>
+              <div class="input_rect">
+                <input
+                  type="text"
+                  name="name"
+                  value=""
+                  placeholder="имя"
+                  autocomplete="on"
+                />
+                <input
+                  type="text"
+                  name="surname"
+                  value=""
+                  placeholder="фамилия"
+                  autocomplete="on"
+                />
+              </div>
+            </div>
+
+            <div class="point">
+              <span>дата заселения и срок проживания</span>
+              <div class="input_rect">
+                <input
+                  type="text"
+                  name="date"
+                  value=""
+                  placeholder="дд.мм.гг"
+                  autocomplete="off"
+                />
+                <select name="term">
+                  <option value="one_day">1 день</option>
+                  <option value="three_days">3 дня</option>
+                  <option value="one_week">1 неделя</option>
+                  <option value="two_weeks">2 недели</option>
+                  <option value="one_month">1 месяц</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="point">
+              <span for="">контактные данные</span>
+              <div class="input_rect">
+                <input
+                  type="tel"
+                  name="phone"
+                  value=""
+                  placeholder="номер телефона"
+                  autocomplete="on"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="адрес почты"
+                  autocomplete="on"
+                />
+              </div>
+            </div>
+
+            <div class="point">
+              <span>расскажите ваши ожидания о поездке</span>
+              <p contenteditable="true">
+                ну, это бесплатно, да? А то денег у нас нет...
+              </p>
+            </div>
+
+            <div id="submit">
+              <button type="submit" class="close_button">забронировать</button>
+              <button class="close_button">отменить</button>
+            </div>
           </form>
         </div>
       </div>
@@ -173,9 +253,9 @@
           </div>
         </div>
         <div id="titles">
-          <label>1 этаж</label>
-          <label>2 этаж</label>
-          <label>крыша</label>
+          <span>1 этаж</span>
+          <span>2 этаж</span>
+          <span>крыша</span>
         </div>
         <div id="images">
           <img id="left_image" src="images/altar1.svg" alt="" />
@@ -227,31 +307,31 @@
     <section id="footer">
       <div id="navigation">
         <div class="section">
-          <label>экомаркет</label>
+          <span>экомаркет</span>
           <a href="market.html">магазин</a>
           <a href="events.html">события</a>
           <a href="about.html">о маркете</a>
         </div>
         <div class="section">
-          <label>коливинг</label>
+          <span>коливинг</span>
           <a href="coliving.html">инфо</a>
           <a href="about.html">бронь места</a>
         </div>
         <div class="section">
-          <label>спец. проекты</label>
+          <span>спец. проекты</span>
           <a href="https://smnvkh.github.io/snadobye/">волшебный сад</a>
           <a href="https://smnvkh.github.io/snadobye-newspaper/"
             >магические объявления</a
           >
         </div>
         <div class="section">
-          <label>
+          <span>
             дарим постоянную скидку <br />
             20% за подпиcку на рассылку
-          </label>
+          </span>
           <div id="email">
-            <input type="email" list="mailList" />
-            <img src="images/star.svg" alt="" />
+            <input type="email" name="email" value="" autocomplete="on" />
+            <button type="submit"><img src="images/star.svg" alt="" /></button>
           </div>
         </div>
       </div>

@@ -261,8 +261,10 @@
   }
 }
 
-#booking_pop_up {
-  /* display: none; */
+/* booking pop-up for the first block's button */
+
+.booking_pop_up {
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -276,8 +278,103 @@
 #booking_pop_up_content {
   background-color: #6b854f;
   margin: 10vw auto;
-  padding: 3vw;
+  padding: 5vw;
   width: 63vw;
   height: 83vw;
-  text-align: center;
+}
+
+#booking_pop_up_content input[type='text'],
+input[type='tel'],
+input[type='email'],
+select {
+  width: 28.2vw;
+  height: 4vw;
+  border: solid 0.2vw #1d1d1d;
+  padding: 0 1.1vw;
+}
+
+#booking_pop_up_content h2 {
+  padding-bottom: 4vw;
+  margin-top: 0;
+}
+
+span {
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8vw;
+}
+
+.radio_check {
+  display: flex;
+  flex-direction: row;
+  width: 30.8vw;
+  gap: 1.1vw;
+  align-items: center;
+}
+
+.input_rect,
+#submit,
+#visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  width: 63vw;
+  gap: 1.4vw;
+}
+
+#booking_pop_up_content input[type='radio'] {
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 0.2vw solid #1d1d1d;
+  border-radius: 50%;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+#booking_pop_up_content input[type='radio']:checked {
+  background-color: #1d1d1d;
+  border: thick double #6b854f;
+}
+
+.point > p {
+  height: 21.9vw;
+  border: 0.2vw solid #1d1d1d;
+  padding: 1.1vw;
+}
+
+#submit,
+.input_rect {
+  justify-content: space-between;
+}
+
+select {
+  width: 30.8vw;
+  height: 4.4vw;
+  background-color: #6b854f;
+}
+
+#submit button {
+  width: 30.8vw;
+}
+
+#submit button:last-child {
+  background-color: #6b854f;
+  border: solid 0.2vw #1d1d1d;
+  color: #1d1d1d;
+}
+
+#submit button:last-child:hover {
+  background-color: #1d1d1d;
+  border: solid 0.2vw #1d1d1d;
+  color: #6b854f;
 }

@@ -19,7 +19,10 @@
 body,
 a,
 button,
-input {
+input,
+span,
+select,
+::placeholder {
   font-family: 'Kazimir';
   font-weight: 400;
   font-size: 1.9vw;
@@ -31,6 +34,18 @@ a,
 button {
   cursor: pointer;
   text-decoration: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+.point > p:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 28.2vw #6b854f inset;
 }
 
 button {
@@ -214,13 +229,17 @@ h2 {
   width: 26vw;
 }
 
-.section label {
+.section span {
   margin-bottom: 0.5vw;
   font-weight: 700;
 }
 
-.section:last-child label {
+.section:last-child span {
   margin-left: 1vw;
+}
+
+.section:last-child {
+  width: 30.8vw;
 }
 
 #email {
@@ -237,14 +256,17 @@ h2 {
   border: solid 0.2vw #1d1d1d;
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
-}
-
-#email img {
+#email img,
+#email button {
   width: 4.5vw;
   height: 4.5vw;
+}
+
+#email button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
 }
 
 #bottom_line {
