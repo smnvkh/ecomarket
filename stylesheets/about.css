@@ -1,0 +1,57 @@
+#about {
+  padding: 4.2vw 4vw 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 91.8vw;
+  overflow: hidden;
+}
+
+#left_block,
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+#left_block {
+  gap: 2.8vw;
+  line-height: 2.5vw;
+  width: 52%;
+}
+
+.description {
+  gap: 1.4vw;
+}
+
+.description p:first-child {
+  font-weight: 700;
+}
+
+#right_block {
+  width: 46%;
+  height: 67.5vw;
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+}
+
+#right_block > span {
+  position: absolute;
+  pointer-events: none;
+  cursor: none !important;
+  background: url(../images/mushroom.gif);
+  background-size: cover;
+  animation: mushrooms 4s linear infinite;
+}
+
+@keyframes mushrooms {
+  0% {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, -1000%);
+    opacity: 0;
+  }
+}

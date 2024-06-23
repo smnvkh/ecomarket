@@ -6,6 +6,10 @@
 
 /* экраны */
 
+body {
+  overflow-x: hidden;
+}
+
 #house_project {
   display: flex;
   flex-direction: column;
@@ -296,10 +300,6 @@ select {
 #booking_pop_up_content h2 {
   padding-bottom: 4vw;
   margin-top: 0;
-}
-
-span {
-  font-weight: 700;
 }
 
 form {

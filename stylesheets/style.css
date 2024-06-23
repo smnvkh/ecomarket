@@ -69,7 +69,9 @@ h2::selection,
 h3::selection,
 h4::selection,
 p::selection,
-a::selection {
+a::selection,
+span::selection,
+br::selection {
   background: none;
   color: #6b854f;
 }
@@ -81,6 +83,10 @@ img::selection {
 button::selection {
   background: none;
   color: #1d1d1d;
+}
+
+span {
+  font-weight: 700;
 }
 
 /* хэдэр */
@@ -231,7 +237,6 @@ h2 {
 
 .section span {
   margin-bottom: 0.5vw;
-  font-weight: 700;
 }
 
 .section:last-child span {
