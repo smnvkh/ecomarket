@@ -4,6 +4,10 @@
   font-weight: 700;
 }
 
+.nav_menu.active {
+  z-index: 3;
+}
+
 #projects {
   padding: 4.2vw 4vw 0;
   display: flex;

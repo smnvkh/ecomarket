@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="stylesheets/coliving.css" />
     <link rel="icon" type="image/x-icon" href="images/icon.ico" />
     <link rel="icon" type="image/png" href="images/icon.png" />
+    <script src="javascript/style.js"></script>
     <script src="javascript/coliving.js"></script>
     <!-- <style>
       html {
@@ -37,16 +38,31 @@
 
   <body>
     <section id="header">
-      <div id="menu">
-        <a href="index.html">СНАДОБЬЕ</a>
-        <div id="links">
-          <a href="market.html">магазин</a>
-          <a href="events.html">события</a>
-          <a href="about.html">о маркете</a>
-          <a href="coliving.html">коливинг</a>
-          <a href="projects.html">спец. проекты</a>
+      <nav class="navbar">
+        <a class="nav_logo" href="index.html">СНАДОБЬЕ</a>
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a class="nav_link" href="market.html">магазин</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="events.html">события</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="about.html">о маркете</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="coliving.html">коливинг</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="projects.html">спец. проекты</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
       <div id="upper_line">
         <img src="images/line.svg" alt="" />
       </div>

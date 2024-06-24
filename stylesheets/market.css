@@ -3,6 +3,10 @@
   font-weight: 700;
 }
 
+.nav_menu.active {
+  z-index: 1;
+}
+
 /* карточки товаров */
 #shop {
   padding: 0vw 4vw;

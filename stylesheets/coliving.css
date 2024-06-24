@@ -4,6 +4,10 @@
   font-weight: 700;
 }
 
+.nav_menu.active {
+  z-index: 1;
+}
+
 /* экраны */
 
 body {

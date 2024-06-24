@@ -1,3 +1,13 @@
+/* хэдэр */
+
+#menu a:nth-child(3) {
+  font-weight: 700;
+}
+
+.nav_menu.active {
+  z-index: 1;
+}
+
 #about {
   padding: 4.2vw 4vw 0;
   display: flex;

@@ -4,6 +4,10 @@
   font-weight: 700;
 }
 
+.nav_menu.active {
+  z-index: 3;
+}
+
 #posters {
   padding-top: 4.2vw;
   position: relative;
