@@ -146,50 +146,6 @@ span {
   background-color: #1d1d1d;
 }
 
-/* хэдэр для планшета и мобилки */
-
-@media only screen and (min-width: 360px) and (max-width: 1023px) {
-  .hamburger {
-    display: block;
-  }
-
-  .bar:nth-child(1) {
-    margin-top: 0;
-  }
-
-  .bar:nth-child(3) {
-    margin-bottom: 0;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar {
-    align-items: center;
-  }
-
-  .nav_menu {
-    position: fixed;
-    left: -100%;
-    top: 9.5vw;
-    gap: 0;
-    flex-direction: column;
-    background-color: #1d1d1d;
-    width: 100%;
-    transition: 0.3s;
-  }
-
-  .nav_link {
-    color: #6b854f;
-    background-color: #1d1d1d;
-  }
-
-  .nav_menu.active {
-    left: 0;
-  }
-}
-
 /* первый блок для магазина и коливинга */
 
 .first_block {
@@ -294,12 +250,10 @@ h2 {
   width: 26vw;
 }
 
-.section span {
+.section > span > a {
   margin-bottom: 0.5vw;
-}
-
-.section:last-child span {
-  margin-left: 1vw;
+  font-weight: 700;
+  pointer-events: none;
 }
 
 .section:last-child {
@@ -353,10 +307,48 @@ h2 {
 #author a {
   font-weight: 700;
   font-size: 1.8em;
-  margin-right: 5.5vw;
 }
 
-/* планшет */
+/* общие стили для планшета и мобилки */
+
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  /* хэдэр */
+
+  .hamburger {
+    display: block;
+  }
+
+  .bar:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .nav_menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1d1d1d;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .nav_link {
+    color: #6b854f;
+    background-color: #1d1d1d;
+  }
+
+  .nav_menu.active {
+    left: 0;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   p,
@@ -366,11 +358,13 @@ h2 {
   span,
   select,
   ::placeholder {
-    font-size: 2.5vw;
+    font-size: 2.1vw;
   }
 
+  /* хэдэр для планшета */
+
   .nav_logo {
-    font-size: 3em;
+    font-size: 2.1em;
   }
 
   .bar {
@@ -387,6 +381,10 @@ h2 {
     transform: translateY(-12px) rotate(-45deg);
   }
 
+  .nav_menu {
+    top: 8vw;
+  }
+
   .nav_item {
     margin: 1.5vw 0;
   }
@@ -397,6 +395,93 @@ h2 {
 
   .nav_item:nth-child(5) {
     margin-bottom: 3vw;
+  }
+
+  /* футер для планшета */
+
+  #navigation {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    row-gap: 3vw;
+    column-gap: 0;
+  }
+  #navigation .section:nth-child(4),
+  #navigation :nth-child(4) span {
+    width: 33vw;
+  }
+
+  #navigation :nth-child(4) input {
+    width: 32vw;
+    height: 3vw;
+    padding: 1vw 1.5vw;
+  }
+
+  #navigation :nth-child(4) img {
+    width: 3.4vw;
+  }
+
+  #navigation .section {
+    width: 30vw;
+  }
+
+  #email {
+    display: block;
+    position: relative;
+    right: 2.3vw;
+  }
+
+  #email > button {
+    position: absolute;
+    left: 30.5vw;
+    bottom: 0.4vw;
+  }
+
+  .section span {
+    margin-bottom: 1vw;
+  }
+
+  /* первый блок для магазина и колвинга */
+
+  #first_block {
+    gap: 3.6vw;
+  }
+
+  .block_description img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .checkbox input {
+    left: 39vw;
+    width: 2vw;
+    height: 2vw;
+    top: 14.5vw;
+  }
+
+  h2 {
+    font-size: 3.4em;
+    line-height: 5.5vw;
+  }
+
+  .block_description p {
+    line-height: 2.8vw;
+    margin-top: 1.5vw;
+  }
+
+  .block_description button {
+    height: 4.7vw;
+    margin-top: 2.5vw;
+  }
+
+  .block_image {
+    width: 56vw;
+    height: 35vw;
+  }
+
+  .block_image img {
+    width: 50vw;
+    height: 35vw;
   }
 }
 
@@ -412,6 +497,8 @@ h2 {
   ::placeholder {
     font-size: 3.9vw;
   }
+
+  /* хэдэр для мобилки */
 
   .nav_logo {
     font-size: 3.5em;
@@ -431,6 +518,10 @@ h2 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .nav_menu {
+    top: 10.5vw;
+  }
+
   .nav_item {
     margin: 2.5vw 0;
   }
@@ -441,5 +532,158 @@ h2 {
 
   .nav_item:nth-child(5) {
     margin-bottom: 6vw;
+  }
+
+  /* футер для мобилки */
+
+  #footer {
+    padding-top: 11.2vw;
+  }
+  #navigation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .section > span > a {
+    pointer-events: all;
+    font-weight: 400;
+  }
+
+  .section:nth-child(1) span {
+    display: none;
+  }
+
+  .section:nth-child(2) > a,
+  .section:nth-child(3) > a {
+    display: none;
+  }
+
+  .section:nth-child(1),
+  .section:nth-child(2) {
+    width: 20vw;
+  }
+
+  .section:nth-child(3) {
+    width: 28vw;
+  }
+
+  .section:nth-child(4) {
+    width: 62vw;
+  }
+
+  .section {
+    gap: 0;
+  }
+
+  .section a,
+  .section span {
+    margin-bottom: 3vw;
+  }
+
+  .section:nth-child(3) > span {
+    margin-bottom: 5.5vw;
+  }
+
+  .section:last-child span {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .section:last-child {
+    gap: 3vw;
+  }
+
+  #email {
+    display: block;
+    position: relative;
+    margin-left: 0vw;
+  }
+
+  #email > button {
+    position: absolute;
+    left: 46vw;
+    bottom: 1.9vw;
+  }
+
+  #email input {
+    width: 40vw;
+    height: 5vw;
+    padding: 1vw 2vw;
+    border: solid 0.3vw #1d1d1d;
+  }
+
+  #navigation :nth-child(4) img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  #author {
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  #author :nth-child(1) {
+    order: 3;
+  }
+
+  #author :nth-child(2) {
+    order: 1;
+    font-size: 3.5em;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  #author :nth-child(3) {
+    order: 2;
+  }
+
+  /* первый блок для магазина на коливинга  */
+
+  .first_block {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .block_description {
+    width: 100%;
+    order: 2;
+  }
+
+  .checkbox {
+    margin-top: -8vw;
+    order: 2;
+  }
+
+  .checkbox input {
+    left: 90vw;
+    top: 106vw;
+  }
+
+  h2 {
+    font-size: 3.7em;
+  }
+
+  .block_description p {
+    line-height: 4vw;
+    width: 85%;
+    margin-top: 3vw;
+  }
+
+  .block_image,
+  .block_image img {
+    width: 100%;
+    height: 60vw;
+  }
+
+  button {
+    width: 45vw;
+    height: 7vw;
+  }
+
+  button:hover {
+    border: solid 0.3vw #1d1d1d;
   }
 }

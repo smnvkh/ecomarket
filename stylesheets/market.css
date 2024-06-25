@@ -69,3 +69,80 @@
 #pestle {
   width: 70%;
 }
+
+/* адаптив для планшета */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .item {
+    height: 47.6vw;
+  }
+}
+
+/* адаптив для мобилки */
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  #shop {
+    height: 310vw;
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+
+  .item {
+    flex-basis: 25%;
+    width: 50%;
+    margin-right: 2vw;
+    height: 74vw;
+  }
+
+  .row:nth-child(2) {
+    order: 3;
+    flex-flow: nowrap;
+  }
+
+  .row:nth-child(2) .item:nth-child(2) {
+    display: none;
+  }
+
+  .row:nth-child(3) {
+    flex-flow: wrap-reverse;
+    flex-direction: row-reverse;
+    padding-top: 3.1vw;
+    row-gap: 5vw;
+    margin-bottom: 108vw;
+    align-content: flex-end;
+  }
+
+  .item {
+    width: 50%;
+    margin-right: 2vw;
+    height: 74vw;
+  }
+
+  .item img {
+    height: 60vw;
+    width: 100%;
+  }
+
+  .row:nth-child(1) .item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .row:nth-child(1) {
+    row-gap: 5vw;
+    height: 73vw;
+  }
+
+  .row:nth-child(3) .item {
+    margin: 0;
+  }
+
+  .row:nth-child(3) .item:nth-child(1) {
+    margin-left: 2vw;
+  }
+
+  .row:nth-child(2) {
+    flex-flow: nowrap;
+  }
+}
