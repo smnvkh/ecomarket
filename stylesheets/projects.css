@@ -103,10 +103,6 @@ h3 {
 
 /* второй блок */
 
-.frame:nth-child(2) a {
-  bottom: 6.5vw;
-}
-
 .second_content::before {
   background-image: url('../images/ad_ball.png'), url('../images/ad_jug.png'),
     url('../images/ad_mushroom.png'), url('../images/ad_insect.png');
@@ -130,5 +126,17 @@ h3 {
     background-position: left 42vw bottom 18vw, right 40vw top 10vw,
       left 23vw top 38vw, right 20vw bottom 42vw;
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  #projects {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .frame:nth-child(2) a {
+    bottom: 6.5vw;
   }
 }

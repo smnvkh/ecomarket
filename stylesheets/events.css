@@ -71,3 +71,18 @@
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #6b854f);
 }
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .posters img {
+    height: 63vw;
+    width: 45vw;
+    margin-right: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .posters img {
+    height: 36.5vw;
+    width: 26.1vw;
+  }
+}

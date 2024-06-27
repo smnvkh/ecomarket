@@ -382,3 +382,164 @@ select {
   border: solid 0.2vw #1d1d1d;
   color: #6b854f;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  /* форма брони */
+
+  .booking_pop_up {
+    background-color: #6b854f;
+  }
+  #booking_pop_up_content {
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 84%;
+    height: 183vw;
+    margin: 0;
+    padding: 8vw;
+  }
+
+  form {
+    gap: 5vw;
+  }
+
+  .point {
+    width: 100%;
+    gap: 3vw;
+  }
+
+  #visit {
+    width: 100%;
+    flex-direction: column;
+    text-wrap: nowrap;
+  }
+
+  #visit p {
+    margin-bottom: 1vw;
+  }
+
+  #booking_pop_up_content > h2 {
+    padding-bottom: 7vw;
+    margin-top: 0;
+    font-size: 4em;
+  }
+
+  #booking_pop_up_content input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  select {
+    width: 95%;
+    height: 6.8vw;
+    padding: 1vw 2vw;
+    border: solid 0.3vw #1d1d1d;
+  }
+
+  select {
+    width: 100.3%;
+    height: 9.5vw;
+  }
+
+  .input_rect {
+    flex-direction: column;
+    gap: 1.5vw;
+  }
+
+  .point > p {
+    height: 30vw;
+    padding: 2vw 2vw;
+    border: solid 0.3vw #1d1d1d;
+  }
+
+  #submit button {
+    width: 40vw;
+    height: 7vw;
+  }
+
+  #submit button:last-child {
+    border: solid 0.3vw #1d1d1d;
+  }
+
+  /* 2 блок */
+
+  #house_project {
+    padding: 2vw 4vw 0 4vw;
+    line-height: inherit;
+  }
+
+  #quote {
+    font-size: 3em;
+    width: 85%;
+    line-height: 5.5vw;
+    margin: 2vw;
+  }
+
+  .floor img {
+    width: 28vw;
+  }
+
+  #buttons {
+    gap: 4vw;
+    margin-bottom: -1vw;
+  }
+
+  #left_bedroom {
+    left: 1.5vw;
+    top: 8vw;
+  }
+
+  #altar {
+    left: 10.5vw;
+    top: 11vw;
+  }
+
+  #right_bedroom {
+    left: 20vw;
+    top: 8vw;
+  }
+
+  #library {
+    left: 6vw;
+    top: 18vw;
+  }
+
+  #potionary {
+    left: 11vw;
+    top: 11vw;
+  }
+
+  #divination {
+    left: 10vw;
+    top: 2vw;
+  }
+
+  #garden {
+    left: 4.5vw;
+    top: 4.5vw;
+    width: 17vw;
+    height: 17vw;
+  }
+
+  #titles {
+    text-wrap: nowrap;
+    gap: 18.2vw;
+    width: 92vw;
+  }
+
+  #middle_image,
+  #right_image,
+  #image_stack {
+    display: none;
+  }
+
+  #images img {
+    width: 100%;
+  }
+
+  .blocks {
+    padding-bottom: 6vw;
+  }
+
+  .blocks:nth-child(4) button {
+    width: 52vw;
+  }
+}

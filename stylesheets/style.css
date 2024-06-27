@@ -68,6 +68,10 @@ button:hover {
   border: solid 0.2vw #1d1d1d;
 }
 
+/* img {
+  pointer-events: none;
+} */
+
 h1::selection,
 h2::selection,
 h3::selection,
@@ -91,6 +95,10 @@ button::selection {
 
 span {
   font-weight: 700;
+}
+
+select {
+  appearance: none;
 }
 
 /* хэдэр */
@@ -496,6 +504,8 @@ h2 {
   select,
   ::placeholder {
     font-size: 3.9vw;
+    font-size: 3.9vw;
+    line-height: 5vw;
   }
 
   /* хэдэр для мобилки */
@@ -519,7 +529,7 @@ h2 {
   }
 
   .nav_menu {
-    top: 10.5vw;
+    top: 10vw;
   }
 
   .nav_item {
@@ -626,6 +636,7 @@ h2 {
 
   #author :nth-child(1) {
     order: 3;
+    font-size: 3.9vw;
   }
 
   #author :nth-child(2) {
@@ -637,6 +648,11 @@ h2 {
 
   #author :nth-child(3) {
     order: 2;
+  }
+
+  #author :nth-child(4) > span,
+  #author :nth-child(4) > span {
+    font-weight: 400;
   }
 
   /* первый блок для магазина на коливинга  */
@@ -664,6 +680,7 @@ h2 {
 
   h2 {
     font-size: 3.7em;
+    line-height: 5.5vw;
   }
 
   .block_description p {
@@ -680,7 +697,7 @@ h2 {
 
   button {
     width: 45vw;
-    height: 7vw;
+    height: 8vw;
   }
 
   button:hover {

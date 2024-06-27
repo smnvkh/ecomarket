@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // hover animation / main image
   let mainVoodoo = document.querySelector('.block_image')
   mainVoodoo.addEventListener('mouseover', newMainHouse)
-  mainVoodoo.addEventListener('touchstart', newMainHouse)
   mainVoodoo.addEventListener('mouseout', oldMainHouse)
 
   function newMainHouse() {
