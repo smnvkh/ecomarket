@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function newMainHouse() {
     document.getElementById('main_image').src =
-      'images/coliving_main_colored.svg'
+      'images/coliving_main_colored.png'
   }
 
   function oldMainHouse() {
-    document.getElementById('main_image').src = 'images/coliving_main.svg'
+    document.getElementById('main_image').src = 'images/coliving_main.png'
   }
 
   // поп-ап с заявкой на бронь
@@ -41,17 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function newAltarImage() {
     if (altar.checked) {
-      document.getElementById('left_image').src = 'images/altar1_colored.svg'
-      document.getElementById('middle_image').src = 'images/altar2_colored.svg'
-      document.getElementById('right_image').src = 'images/altar3_colored.svg'
+      document.getElementById('left_image').src = 'images/altar1_colored.png'
+      document.getElementById('middle_image').src = 'images/altar2_colored.png'
+      document.getElementById('right_image').src = 'images/altar3_colored.png'
     }
   }
 
   function oldAltarImage() {
     if (altar.checked) {
-      document.getElementById('left_image').src = 'images/altar1.svg'
-      document.getElementById('middle_image').src = 'images/altar2.svg'
-      document.getElementById('right_image').src = 'images/altar3.svg'
+      document.getElementById('left_image').src = 'images/altar1.png'
+      document.getElementById('middle_image').src = 'images/altar2.png'
+      document.getElementById('right_image').src = 'images/altar3.png'
     }
   }
 
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
   firstPage.addEventListener('mouseout', oldFirstPage)
 
   function newFirstPage() {
-    document.getElementById('image1').src = 'images/page1.svg'
+    document.getElementById('image1').src = 'images/page1.png'
   }
 
   function oldFirstPage() {
-    document.getElementById('image1').src = 'images/page1_green.svg'
+    document.getElementById('image1').src = 'images/page1_green.png'
   }
 
   // clickable house plan
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
   radios.forEach((radio) => {
     radio.addEventListener('click', () => {
       const value = radio.getAttribute('value')
-      leftImage.src = 'images/' + value + '1.svg'
-      middleImage.src = 'images/' + value + '2.svg'
-      rightImage.src = 'images/' + value + '3.svg'
+      leftImage.src = 'images/' + value + '1.png'
+      middleImage.src = 'images/' + value + '2.png'
+      rightImage.src = 'images/' + value + '3.png'
     })
   })
 
@@ -114,15 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   function bedroomsSelected() {
-    document.getElementById('first_floor').src = 'images/bedrooms_selected.svg'
+    document.getElementById('first_floor').src = 'images/bedrooms_selected.png'
   }
 
   function altarSelected() {
-    document.getElementById('first_floor').src = 'images/altar_selected.svg'
+    document.getElementById('first_floor').src = 'images/altar_selected.png'
   }
 
   function firstFloor() {
-    document.getElementById('first_floor').src = 'images/first_floor.svg'
+    document.getElementById('first_floor').src = 'images/first_floor.png'
   }
 
   // second floor
@@ -152,21 +152,21 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   function librarySelected() {
-    document.getElementById('second_floor').src = 'images/library_selected.svg'
+    document.getElementById('second_floor').src = 'images/library_selected.png'
   }
 
   function potionarySelected() {
     document.getElementById('second_floor').src =
-      'images/potionary_selected.svg'
+      'images/potionary_selected.png'
   }
 
   function divinationSelected() {
     document.getElementById('second_floor').src =
-      'images/divination_selected.svg'
+      'images/divination_selected.png'
   }
 
   function secondFloor() {
-    document.getElementById('second_floor').src = 'images/second_floor.svg'
+    document.getElementById('second_floor').src = 'images/second_floor.png'
   }
 
   // third floor
@@ -180,11 +180,11 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   function gardenSelected() {
-    document.getElementById('third_floor').src = 'images/garden_selected.svg'
+    document.getElementById('third_floor').src = 'images/garden_selected.png'
   }
 
   function thirdFloor() {
-    document.getElementById('third_floor').src = 'images/third_floor.svg'
+    document.getElementById('third_floor').src = 'images/third_floor.png'
   }
 
   // book

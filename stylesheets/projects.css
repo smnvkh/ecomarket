@@ -68,9 +68,9 @@ h3 {
 /* первый блок */
 
 .first_content::before {
-  background-image: url('../images/garden_mushroom.svg'),
-    url('../images/garden_plant.svg'), url('../images/garden_flower.svg'),
-    url('../images/garden_mushroom2.svg');
+  background-image: url('../images/garden_mushroom.png'),
+    url('../images/garden_plant.png'), url('../images/garden_flower.png'),
+    url('../images/garden_mushroom2.png');
   background-size: 25vw, 23vw, 18vw, 22vw;
 }
 
@@ -108,8 +108,8 @@ h3 {
 }
 
 .second_content::before {
-  background-image: url('../images/ad_ball.svg'), url('../images/ad_jug.svg'),
-    url('../images/ad_mushroom.svg'), url('../images/ad_insect.svg');
+  background-image: url('../images/ad_ball.png'), url('../images/ad_jug.png'),
+    url('../images/ad_mushroom.png'), url('../images/ad_insect.png');
   background-size: 23vw, 24vw, 25vw, 25vw;
 }
 

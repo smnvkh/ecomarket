@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mainVoodoo.addEventListener('mouseout', oldMainVoodoo)
 
   function newMainVoodoo() {
-    document.getElementById('main_image').src = 'images/main_voodoo_colored.svg'
+    document.getElementById('main_image').src = 'images/main_voodoo_colored.png'
   }
 
   function oldMainVoodoo() {
@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function newYouthBottle() {
     document.getElementById('youth_bottle').src =
-      'images/youth_bottle_colored.svg'
+      'images/youth_bottle_colored.png'
   }
 
   function oldYouthBottle() {
-    document.getElementById('youth_bottle').src = 'images/youth_bottle.svg'
+    document.getElementById('youth_bottle').src = 'images/youth_bottle.png'
   }
 
   let loveBottle = document.querySelector('#love_bottle')
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function newLoveBottle() {
     document.getElementById('love_bottle').src =
-      'images/love_bottle_colored.svg'
+      'images/love_bottle_colored.png'
   }
 
   function oldLoveBottle() {
-    document.getElementById('love_bottle').src = 'images/love_bottle.svg'
+    document.getElementById('love_bottle').src = 'images/love_bottle.png'
   }
 
   let intelligenceBottle = document.querySelector('#intelligence_bottle')
@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function newIntelligenceBottle() {
     document.getElementById('intelligence_bottle').src =
-      'images/intelligence_bottle_colored.svg'
+      'images/intelligence_bottle_colored.png'
   }
 
   function oldIntelligenceBottle() {
     document.getElementById('intelligence_bottle').src =
-      'images/intelligence_bottle.svg'
+      'images/intelligence_bottle.png'
   }
 
   // анимация второго ряда изображений
@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
   paloSanto.addEventListener('mouseout', oldPaloSanto)
 
   function newPaloSanto() {
-    document.getElementById('palo_santo').src = 'images/palo_santo_colored.svg'
+    document.getElementById('palo_santo').src = 'images/palo_santo_colored.png'
   }
 
   function oldPaloSanto() {
-    document.getElementById('palo_santo').src = 'images/palo_santo.svg'
+    document.getElementById('palo_santo').src = 'images/palo_santo.png'
   }
 
   let voodoo = document.querySelector('#voodoo')
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
   voodoo.addEventListener('mouseout', oldVoodoo)
 
   function newVoodoo() {
-    document.getElementById('voodoo').src = 'images/voodoo_colored.svg'
+    document.getElementById('voodoo').src = 'images/voodoo_colored.png'
   }
 
   function oldVoodoo() {
-    document.getElementById('voodoo').src = 'images/voodoo.svg'
+    document.getElementById('voodoo').src = 'images/voodoo.png'
   }
 
   let record = document.querySelector('#record')
@@ -113,11 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
   record.addEventListener('mouseout', oldRecord)
 
   function newRecord() {
-    document.getElementById('record').src = 'images/music_record_colored.svg'
+    document.getElementById('record').src = 'images/music_record_colored.png'
   }
 
   function oldRecord() {
-    document.getElementById('record').src = 'images/music_record.svg'
+    document.getElementById('record').src = 'images/music_record.png'
   }
 
   // анимация третьего ряда изображений
@@ -126,11 +126,11 @@ document.addEventListener('DOMContentLoaded', () => {
   book.addEventListener('mouseout', oldBook)
 
   function newBook() {
-    document.getElementById('book').src = 'images/book_colored.svg'
+    document.getElementById('book').src = 'images/book_colored.png'
   }
 
   function oldBook() {
-    document.getElementById('book').src = 'images/book.svg'
+    document.getElementById('book').src = 'images/book.png'
   }
 
   let pestle = document.querySelector('#pestle')
@@ -138,11 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
   pestle.addEventListener('mouseout', oldPestle)
 
   function newPestle() {
-    document.getElementById('pestle').src = 'images/pestle_colored.svg'
+    document.getElementById('pestle').src = 'images/pestle_colored.png'
   }
 
   function oldPestle() {
-    document.getElementById('pestle').src = 'images/pestle.svg'
+    document.getElementById('pestle').src = 'images/pestle.png'
   }
 
   let bag = document.querySelector('#bag')
@@ -150,10 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
   bag.addEventListener('mouseout', oldBag)
 
   function newBag() {
-    document.getElementById('bag').src = 'images/bag_colored.svg'
+    document.getElementById('bag').src = 'images/bag_colored.png'
   }
 
   function oldBag() {
-    document.getElementById('bag').src = 'images/bag.svg'
+    document.getElementById('bag').src = 'images/bag.png'
   }
 })

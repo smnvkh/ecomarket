@@ -41,33 +41,51 @@
 
 .card_image {
   position: absolute;
-  top: 0;
+  top: 4vw;
   text-align: center;
 }
 
 #youth_bottle,
 #love_bottle,
 #intelligence_bottle {
-  width: 74%;
+  width: 13.5vw;
+  height: 30vw;
 }
 
 #palo_santo {
-  width: 90%;
+  width: 28vw;
+  height: 32vw;
   margin-left: 1vw;
+  margin-bottom: 1vw;
 }
 
-#voodoo,
-#bag {
-  width: 80%;
+#voodoo {
+  width: 19vw;
+  height: 31vw;
 }
 
 #record {
-  width: 82%;
+  width: 24vw;
+  height: 17vw;
+  margin: 6.5vw;
 }
 
-#book,
+#book {
+  width: 19vw;
+  height: 28vw;
+  margin-top: 1.5vw;
+}
+
 #pestle {
-  width: 70%;
+  width: 22vw;
+  height: 28vw;
+  margin-top: 1vw;
+}
+
+#bag {
+  width: 22vw;
+  height: 25vw;
+  margin-top: 3vw;
 }
 
 /* адаптив для планшета */
@@ -123,6 +141,49 @@
   .item img {
     height: 60vw;
     width: 100%;
+  }
+
+  #youth_bottle,
+  #love_bottle,
+  #intelligence_bottle {
+    width: 22vw;
+    height: 47vw;
+    margin-top: 2vw;
+  }
+
+  #palo_santo {
+    width: 41vw;
+    height: 43vw;
+    margin-top: 4vw;
+  }
+
+  #voodoo {
+    width: 19vw;
+    height: 31vw;
+  }
+
+  #record {
+    width: 37vw;
+    height: 27vw;
+    margin-top: 12vw;
+  }
+
+  #book {
+    width: 30vw;
+    height: 43vw;
+    margin-top: 4.5vw;
+  }
+
+  #pestle {
+    width: 35vw;
+    height: 44vw;
+    margin-top: 3.5vw;
+  }
+
+  #bag {
+    width: 37vw;
+    height: 40vw;
+    margin-top: 6vw;
   }
 
   .row:nth-child(1) .item:nth-child(2) {
