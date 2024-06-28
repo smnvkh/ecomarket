@@ -82,6 +82,12 @@ span::selection,
 br::selection {
   background: none;
   color: #6b854f;
+  webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 img::selection {
@@ -636,6 +642,7 @@ h2 {
   #author :nth-child(1) {
     order: 3;
     font-size: 3.9vw;
+    font-weight: 400;
   }
 
   #author :nth-child(2) {
