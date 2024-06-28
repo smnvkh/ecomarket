@@ -34,6 +34,11 @@ body {
   padding-bottom: 0;
 }
 
+.blocks:nth-child(1),
+.blocks:nth-child(3) {
+  width: 70%;
+}
+
 /* кликабельный блок со схемой здания и рендерами */
 
 #buttons {
@@ -128,6 +133,7 @@ body {
   font-size: 1.5em;
   text-align: center;
   line-height: 2.7vw;
+  width: 70%;
 }
 
 /* книга */
@@ -547,6 +553,11 @@ select {
 
   .blocks:nth-child(4) button {
     width: 52vw;
+  }
+
+  .blocks:nth-child(1),
+  .blocks:nth-child(3) {
+    width: 100%;
   }
 }
 
