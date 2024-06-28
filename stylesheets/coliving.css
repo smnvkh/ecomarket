@@ -543,3 +543,86 @@ select {
     width: 52vw;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #house_project {
+    padding: 4vw;
+    width: 92%;
+  }
+
+  .blocks:nth-child(1),
+  .blocks:nth-child(3) {
+    width: 80%;
+  }
+
+  .blocks {
+    gap: 4vw;
+  }
+
+  #images img {
+    width: 45.5vw;
+  }
+
+  #right_image {
+    display: none;
+  }
+
+  .floor img {
+    width: 25vw;
+  }
+
+  #left_bedroom {
+    left: 1.5vw;
+    top: 8vw;
+  }
+
+  #altar {
+    left: 9.5vw;
+    top: 11vw;
+  }
+
+  #right_bedroom {
+    left: 18vw;
+    top: 8vw;
+  }
+
+  #library {
+    left: 5vw;
+    top: 16vw;
+  }
+
+  #potionary {
+    left: 9vw;
+    top: 9vw;
+  }
+
+  #divination {
+    left: 9vw;
+    top: 2vw;
+  }
+
+  #garden {
+    left: 3.5vw;
+    top: 3.5vw;
+  }
+
+  #buttons {
+    gap: 6vw;
+  }
+
+  #titles {
+    gap: 23.5vw;
+    text-wrap: nowrap;
+    margin-top: 1vw;
+  }
+
+  #quote {
+    width: 70%;
+  }
+
+  .blocks:nth-child(4),
+  #image_stack {
+    width: 100%;
+    height: 75vw;
+  }
+}

@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let mainVoodoo = document.querySelector('.block_image')
   mainVoodoo.addEventListener('mouseover', newMainVoodoo)
   mainVoodoo.addEventListener('mouseout', oldMainVoodoo)
+  mainVoodoo.addEventListener('touchstart', newMainVoodoo)
+  mainVoodoo.addEventListener('touchend', oldMainVoodoo)
 
   function newMainVoodoo() {
     document.getElementById('main_image').src = 'images/main_voodoo_colored.png'

@@ -132,6 +132,88 @@ h3 {
 @media only screen and (min-width: 360px) and (max-width: 767px) {
   #projects {
     flex-direction: column;
+    gap: 2vw;
+  }
+
+  .frame img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info {
+    width: 89%;
+    margin: 6vw 4.5vw;
+  }
+
+  .first_content,
+  .second_content {
+    height: 95%;
+    top: 2vw;
+    left: 2vw;
+    width: 96%;
+  }
+
+  h3 {
+    font-size: 3.5em;
+    margin-bottom: 3vw;
+    line-height: inherit;
+  }
+
+  .info p {
+    line-height: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .frame a {
+    top: 55vw;
+    left: 6.8vw;
+    height: 8vw;
+    width: 45vw;
+  }
+
+  .first_content::before {
+    background-size: 60vw, 55vw, 38vw, 50vw;
+    height: 100%;
+  }
+
+  @keyframes left_floating {
+    0% {
+      background-position: right 60vw bottom 36vw, left 10vw top 40vw,
+        left 40vw bottom 54vw, left 50vw top 20vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      background-position: left 90vw bottom 16vw, right 30vw bottom 80vw,
+        left 40vw top 86vw, right 80vw top 36vw;
+      opacity: 1;
+    }
+  }
+
+  .second_content::before {
+    background-size: 50vw, 55vw, 60vw, 60vw;
+  }
+
+  .frame {
+    margin-right: 1.5vw;
+  }
+
+  @keyframes right_floating {
+    0% {
+      background-position: right 40vw top 60vw, left 30vw bottom 68vw,
+        right 41vw bottom 50vw, left 25vw top 61vw;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      background-position: left 20vw bottom 85vw, right 10vw top 80vw,
+        left 100vw top 40vw, right 40vw bottom 83vw;
+      opacity: 1;
+    }
   }
 }
 
