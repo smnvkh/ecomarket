@@ -13,12 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.remove('active')
     })
   )
-
-  //   function scroll() {
-  //     if (navMenu.classList.contains('active')) {
-  //       document.body.style.overflow = 'hidden'
-  //     } else {
-  //       document.body.style.overflow = 'visible'
-  //     }
-  //   }
 })
