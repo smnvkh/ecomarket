@@ -507,18 +507,6 @@ h2 {
     line-height: 5vw;
   }
 
-  h1::selection,
-  h2::selection,
-  h3::selection,
-  h4::selection,
-  p::selection,
-  a::selection,
-  span::selection,
-  br::selection {
-    background: none !important;
-    color: #6b854f !important;
-  }
-
   /* хэдэр для мобилки */
 
   .nav_logo {
