@@ -271,7 +271,6 @@ h2 {
 #email {
   display: flex;
   flex-direction: row;
-  margin-left: 1vw;
   gap: 1vw;
 }
 
@@ -436,7 +435,7 @@ h2 {
   #email {
     display: block;
     position: relative;
-    right: 2.3vw;
+    right: 1vw;
   }
 
   #email > button {
