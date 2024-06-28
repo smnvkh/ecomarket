@@ -51,12 +51,6 @@ body {
   width: 20vw;
 }
 
-/* #first_floor,
-#second_floor,
-#third_floor {
-  cursor: pointer;
-} */
-
 .radios {
   position: absolute;
   top: 0;
@@ -416,6 +410,18 @@ select {
 
   #visit p {
     margin-bottom: 1vw;
+  }
+
+  #booking_pop_up_content input[type='radio'] {
+    width: 3vw;
+    height: 3vw;
+    border: solid 0.3vw #1d1d1d;
+    margin-bottom: 1vw;
+  }
+
+  .radio_check {
+    width: auto;
+    height: auto;
   }
 
   #booking_pop_up_content > h2 {
